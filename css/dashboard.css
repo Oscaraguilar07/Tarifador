@@ -101,8 +101,7 @@ hr {
     width: 100%;
 }
 
-.menu .enlace:hover,
-.menu .enlace i:hover {
+.menu .enlace:hover {
     background: var(--blue-bayoux-100);
     border-radius: 4px;
     color: var(--blue-bayoux-700);
