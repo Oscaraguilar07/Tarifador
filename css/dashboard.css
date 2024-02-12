@@ -22,6 +22,18 @@ body {
     background: var(--blue-bayoux-100);
 }
 
+.containertarifador{
+    display: grid;
+    grid:
+        "menu-dashboard contdatos" 1fr / auto 1fr;
+    gap: 8px;
+}
+
+.contdatos{
+    color: #080d28;
+    padding: 8px;
+}
+
 hr {
     border: solid 1px;
     margin: 14px auto auto;
@@ -46,7 +58,6 @@ hr {
 .top-menu .logo {
     display: flex;
     align-items: center;
-
 }
 
 .top-menu .logo img {
@@ -145,10 +156,26 @@ hr {
 
 @media only screen and (max-width: 600px) {
 
-    .menu {
-        display: block;
+    .containertarifador{
+        display: grid;
+        grid:
+            none;
+        gap: 8px;
     }
 
+
+    .menu-dashboard.open .menu .enlace.lognup {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-dashboard.open .menu {
+        display: flex;
+    }
+    
     .menu .enlace {
         display: flex;
     }
