@@ -17,14 +17,20 @@
 
 body {
     font-family: 'Protest Strike', sans-serif;
-    color: black;
+    color: var(--blue-bayoux-50);
     overflow: hidden;
+    background: var(--blue-bayoux-100);
+}
+
+hr {
+    border: solid 1px;
+    margin: 14px auto auto;
 }
 
 .menu-dashboard {
     width: 150px;
     height: 100vh;
-    background: #f5f8fa;
+    background: var(--blue-bayoux-700);
     padding: 20px;
     position: relative;
     transition: max-width .3s ease;
@@ -79,6 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 4px;
 }
 
 .menu-dashboard.open .menu .enlace {
@@ -90,14 +97,15 @@ body {
     height: 50px;
     justify-content: left;
     padding: 20px 0 20px 17px;
-    transition: all .6s ease;
+    transition: all 0.8;
     width: 100%;
 }
 
-.menu .enlace:hover, .menu .enlace i:hover  {
-    background: #122754;
+.menu .enlace:hover,
+.menu .enlace i:hover {
+    background: var(--blue-bayoux-100);
     border-radius: 4px;
-    color: var(--blue-bayoux-100);
+    color: var(--blue-bayoux-700);
 }
 
 .menu .enlace i {
@@ -190,5 +198,5 @@ body {
     .enlace.lognup {
         position: relative;
     }
-    
+
 }
