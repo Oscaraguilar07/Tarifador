@@ -45,7 +45,7 @@
         </div>
     </div>
     <div id="modal-eliminar" class="modal">
-        <div class="modal-contenido eliminar-modal">
+        <div class="eliminar-modal">
             <span class="cerrar">&times;</span>
             <h2>¿Estás seguro que deseas eliminar este usuario?</h2>
             <div class="modal-botones">
@@ -58,13 +58,13 @@
         <div class="modal-contenido modificar-modal">
             <span class="cerrar">&times;</span>
             <h2>Modificar usuario</h2>
-            <form>
+            <form class="form_content">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" value="Nombre del Usuario">
+                <input type="text" class="inputDate" id="nombre" name="nombre" value="Nombre del Usuario">
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña">
+                <input type="password" class="inputDate" id="contraseña" name="contraseña">
                 <label for="estado">Estado:</label>
-                <select id="estado" name="estado">
+                <select id="estado" name="estado" class="selectDate">
                     <option value="activo">Activo</option>
                     <option value="inactivo">Inactivo</option>
                 </select>

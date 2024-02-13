@@ -114,7 +114,7 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 0 5px; 
+    margin: 0 5px;
     transition: all 0.2s;
 }
 
@@ -183,25 +183,26 @@ h1 {
 }
 
 .tabla td .eliminar {
-    background-color: #ff4d4d; 
+    background-color: #ff4d4d;
     border: solid 1px #ff4d4d;
     color: #fff;
 }
 
 .tabla td .eliminar:hover {
     background-color: var(--blue-bayoux-700);
-    color:#ff4d4d; 
+    color: #ff4d4d;
 }
 
 .tabla td .modificar {
-    background-color: var(--blue-bayoux-700); 
+    background-color: var(--blue-bayoux-700);
     color: #fff;
 }
 
 .tabla td .modificar:hover {
-    background-color: var(--blue-bayoux-200); 
+    background-color: var(--blue-bayoux-200);
     color: var(--blue-bayoux-900);
 }
+
 /* Estilos para la separacion iconos libreria */
 /* Estilos para los iconos dentro de los botones */
 .add-user-btn i,
@@ -209,7 +210,7 @@ h1 {
 .modificar i,
 .anterior i,
 .siguiente i {
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 .siguiente i {
@@ -218,60 +219,147 @@ h1 {
 
 /* Estilos para los modales */
 .modal {
-    display: none; /* Ocultar el modal por defecto */
-    position: fixed; /* Fijar el modal en la ventana del navegador */
-    top: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Centrar el modal */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-    z-index: 1000; /* Colocar el modal por encima de otros elementos */
-    width: 100%; /* Ocupar todo el ancho disponible */
-    height: 100%; /* Ocupar toda la altura disponible */
+    display: none;
+    /* Ocultar el modal por defecto */
+    position: fixed;
+    /* Fijar el modal en la ventana del navegador */
+    top: 50%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Centrar el modal */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    z-index: 1000;
+    /* Colocar el modal por encima de otros elementos */
+    width: 100%;
+    /* Ocupar todo el ancho disponible */
+    height: 100%;
+    /* Ocupar toda la altura disponible */
+}
+
+.eliminar-modal {
+    background-color: #fff;
+    /* Fondo blanco */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    max-width: 50%;
+    /* Ancho máximo del contenido */
+    height: auto;
+    /* Altura máxima del contenido */
+    overflow-y: auto;
+    /* Habilitar el desplazamiento vertical si es necesario */
+    position: relative;
+    /* Establecer la posición relativa para los botones */
+    margin: auto;
+    /* Centrar el contenido horizontalmente */
+    margin-top: 10%;
+    /* Margen superior ajustado para centrar verticalmente */
+}
+
+.eliminar-modal h2 {
+    text-align: center;
 }
 
 .modal-contenido {
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff;
+    /* Fondo blanco */
     display: flex;
     flex-direction: column;
-    padding: 20px; /* Espaciado interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
-    max-width: 50%; /* Ancho máximo del contenido */
-    height: auto; /* Altura máxima del contenido */
-    overflow-y: auto; /* Habilitar el desplazamiento vertical si es necesario */
-    position: relative; /* Establecer la posición relativa para los botones */
-    margin: auto; /* Centrar el contenido horizontalmente */
-    margin-top: 10%; /* Margen superior ajustado para centrar verticalmente */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    max-width: 50%;
+    /* Ancho máximo del contenido */
+    height: 60%;
+    /* Altura máxima del contenido */
+    overflow-y: auto;
+    /* Habilitar el desplazamiento vertical si es necesario */
+    position: relative;
+    /* Establecer la posición relativa para los botones */
+    margin: auto;
+    /* Centrar el contenido horizontalmente */
+    margin-top: 10%;
+    /* Margen superior ajustado para centrar verticalmente */
+}
+
+.modal-contenido h2 {
+    text-align: center;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 80%; */
+    height: 100%;
+    padding: 8px;
+}
+
+.form_content .inputDate,
+.selectDate {
+    border: solid 1px #ddd;
+    padding: 15px;
+    outline: none;
+    border-radius: 6px;
 }
 
 /* Estilos para el botón de cerrar */
 .cerrar {
-    position: absolute; /* Establecer la posición absoluta */
-    top: 10px; /* Espaciado superior */
-    right: 10px; /* Espaciado derecho */
-    cursor: pointer; /* Mostrar el cursor como puntero */
-    color: #333; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
+    position: absolute;
+    /* Establecer la posición absoluta */
+    top: 10px;
+    /* Espaciado superior */
+    right: 10px;
+    /* Espaciado derecho */
+    cursor: pointer;
+    /* Mostrar el cursor como puntero */
+    color: #333;
+    /* Color del icono */
+    font-size: 20px;
+    /* Tamaño del icono */
 }
 
 /* Estilos para los botones dentro del modal */
 .modal-botones {
-    text-align: center; /* Alinear los botones al centro */
-    margin-top: 20px; /* Espaciado superior */
+    text-align: center;
+    /* Alinear los botones al centro */
+    margin-top: 20px;
+    /* Espaciado superior */
 }
 
 .modal-botones button {
-    padding: 10px 20px; /* Espaciado interno */
-    margin: 0 10px; /* Espaciado externo */
-    border: none; /* Quitar el borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Mostrar el cursor como puntero */
-    background-color: #007bff; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    font-size: 16px; /* Tamaño del texto */
-    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    margin: 0 10px;
+    /* Espaciado externo */
+    border: none;
+    /* Quitar el borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar el cursor como puntero */
+    background-color: #007bff;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el ratón */
 }
 
 .modal-botones button:hover {
-    background-color: #0056b3; /* Cambiar el color de fondo al pasar el ratón */
+    background-color: #0056b3;
+    /* Cambiar el color de fondo al pasar el ratón */
 }
