@@ -18,14 +18,16 @@
             <thead>
                 <tr>
                     <th>Nombre</th>
-                    <th>Correo Electrónico</th>
-                    <th>Acciones</th>
+                    <th>Contraseña</th>
+                    <th>Estado</th>
+                    <th>opciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Nombre del Usuario</td>
-                    <td>correo@example.com</td>
+                    <td>Contraseña</td>
+                    <td>Activo</td>
                     <td>
                         <button class="eliminar"><i class='bx bx-trash'></i>Eliminar</button>
                         <button class="modificar"><i class='bx bx-edit'></i>Modificar</button>
@@ -42,5 +44,37 @@
             <button class="add-user-btn"><i class='bx bx-user'></i>Añadir Usuario</button>
         </div>
     </div>
+    <div id="modal-eliminar" class="modal">
+        <div class="modal-contenido eliminar-modal">
+            <span class="cerrar">&times;</span>
+            <h2>¿Estás seguro que deseas eliminar este usuario?</h2>
+            <div class="modal-botones">
+                <button class="cancelar">Cancelar</button>
+                <button class="confirmar-eliminar">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-modificar" class="modal">
+        <div class="modal-contenido modificar-modal">
+            <span class="cerrar">&times;</span>
+            <h2>Modificar usuario</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Nombre del Usuario">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+                <div class="modal-botones">
+                    <button class="cancelar">Cancelar</button>
+                    <button class="guardar-modificacion">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/modales.js"></script>
 </body>
 </html>

@@ -189,7 +189,7 @@ h1 {
 }
 
 .tabla td .eliminar:hover {
-    background-color: var(--blue-bayoux-300);
+    background-color: var(--blue-bayoux-700);
     color:#ff4d4d; 
 }
 
@@ -216,3 +216,62 @@ h1 {
     margin-left: 5px;
 }
 
+/* Estilos para los modales */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Fijar el modal en la ventana del navegador */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el modal */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    z-index: 1000; /* Colocar el modal por encima de otros elementos */
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 100%; /* Ocupar toda la altura disponible */
+}
+
+.modal-contenido {
+    background-color: #fff; /* Fondo blanco */
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    max-width: 50%; /* Ancho máximo del contenido */
+    height: auto; /* Altura máxima del contenido */
+    overflow-y: auto; /* Habilitar el desplazamiento vertical si es necesario */
+    position: relative; /* Establecer la posición relativa para los botones */
+    margin: auto; /* Centrar el contenido horizontalmente */
+    margin-top: 10%; /* Margen superior ajustado para centrar verticalmente */
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute; /* Establecer la posición absoluta */
+    top: 10px; /* Espaciado superior */
+    right: 10px; /* Espaciado derecho */
+    cursor: pointer; /* Mostrar el cursor como puntero */
+    color: #333; /* Color del icono */
+    font-size: 20px; /* Tamaño del icono */
+}
+
+/* Estilos para los botones dentro del modal */
+.modal-botones {
+    text-align: center; /* Alinear los botones al centro */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.modal-botones button {
+    padding: 10px 20px; /* Espaciado interno */
+    margin: 0 10px; /* Espaciado externo */
+    border: none; /* Quitar el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Mostrar el cursor como puntero */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.modal-botones button:hover {
+    background-color: #0056b3; /* Cambiar el color de fondo al pasar el ratón */
+}
