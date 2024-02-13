@@ -12,7 +12,7 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--blue-bayoux-200);
@@ -30,6 +30,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'Protest Strike', sans-serif;
 }
 
 /* Estilos para el buscador */
@@ -157,9 +158,10 @@ h1 {
 
 /* Estilos para la tabla de usuarios */
 .tabla {
-    width: 100%;
     border-collapse: collapse;
+    font-family:'Poppins', sans-serif;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .tabla th,
@@ -189,7 +191,7 @@ h1 {
 }
 
 .tabla td .eliminar:hover {
-    background-color: var(--blue-bayoux-700);
+    background-color: var(--blue-bayoux-300);
     color: #ff4d4d;
 }
 
@@ -219,6 +221,7 @@ h1 {
 
 /* Estilos para los modales */
 .modal {
+    font-family:'Poppins', sans-serif;
     display: none;
     /* Ocultar el modal por defecto */
     position: fixed;
@@ -266,6 +269,7 @@ h1 {
 
 .eliminar-modal h2 {
     text-align: center;
+    font-family: 'Protest Strike', sans-serif;
 }
 
 .modal-contenido {
@@ -295,6 +299,7 @@ h1 {
 
 .modal-contenido h2 {
     text-align: center;
+    font-family: 'Protest Strike', sans-serif;
 }
 
 .form_content {
@@ -338,18 +343,19 @@ h1 {
     /* Espaciado superior */
 }
 
-.modal-botones button {
+.modal-botones .confirmar-eliminar {
     padding: 10px 20px;
     /* Espaciado interno */
     margin: 0 10px;
     /* Espaciado externo */
     border: none;
-    /* Quitar el borde */
+    /* Quitar el bord   e */
     border-radius: 5px;
     /* Bordes redondeados */
     cursor: pointer;
     /* Mostrar el cursor como puntero */
-    background-color: #007bff;
+    background-color: #ff4d4d;
+    border: solid 1px #ff4d4d;
     /* Color de fondo */
     color: #fff;
     /* Color del texto */
@@ -359,7 +365,84 @@ h1 {
     /* Transición suave al pasar el ratón */
 }
 
-.modal-botones button:hover {
-    background-color: #0056b3;
-    /* Cambiar el color de fondo al pasar el ratón */
+.modal-botones .cancelar {
+    padding: 10px 20px;
+    /* Espaciado interno */
+    margin: 0 10px;
+    /* Espaciado externo */
+    border: none;
+    /* Quitar el bord   e */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar el cursor como puntero */
+    background-color:#28a745 ;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el ratón */
+}
+
+.modal-botones .confirmar-eliminar:hover {
+    background-color: var(--blue-bayoux-300);
+    color: #ff4d4d;
+       /* Cambiar el color de fondo al pasar el ratón */
+
+    }
+
+.modal-botones .cancelar:hover {
+    background-color: #218838;
+
+}
+
+.modal-botones .cancelar_md {
+    padding: 10px 20px;
+    /* Espaciado interno */
+    margin: 0 10px;
+    /* Espaciado externo */
+    border: none;
+    /* Quitar el bord   e */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar el cursor como puntero */
+    background-color:#FF8C00;
+    ;
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el ratón */
+}
+.modal-botones .cancelar_md:hover {
+    background-color: #FFB347;
+}
+.modal-botones .guardar-modificacion {
+    padding: 10px 20px;
+    /* Espaciado interno */
+    margin: 0 10px;
+    /* Espaciado externo */
+    border: none;
+    /* Quitar el bord   e */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Mostrar el cursor como puntero */
+    background-color: var(--blue-bayoux-700);
+    /* Color de fondo */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    transition: background-color 0.3s ease;
+    /* Transición suave al pasar el ratón */
+}
+.modal-botones .guardar-modificacion:hover {
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
 }

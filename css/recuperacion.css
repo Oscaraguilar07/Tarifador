@@ -11,7 +11,7 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Protest Strike', sans-serif;
+   font-family: 'Protest Strike', sans-serif; 
     background-color: var(--blue-bayoux-50);
     margin: 0;
     padding: 0;
