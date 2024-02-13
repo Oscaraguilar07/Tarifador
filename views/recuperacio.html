@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambio de Contraseña</title>
-    <link rel="stylesheet" href="recuperacion.css">
+    <link rel="stylesheet" href="/css/recuperacion.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <h2>Cambio de Contraseña</h2> <!-- Título arriba del formulario -->
         <form action="procesar_cambio.php" method="post">
             <label for="correo">Correo Electrónico:</label><br>
-            <input type="email" id="correo" name="correo" required><br><br>
+            <input type="email" id="correo"  name="correo" required><br><br>
             
             <label for="nueva_clave">Nueva Contraseña:</label><br>
             <input type="password" id="nueva_clave" name="nueva_clave" required><br><br>
@@ -19,7 +24,7 @@
             <label for="confirmar_clave">Confirmar Contraseña:</label><br>
             <input type="password" id="confirmar_clave" name="confirmar_clave" required><br><br>
             
-            <input type="submit" value="Cambiar Contraseña">
+            <input type="submit" value="Cambiar Contraseña">    
         </form>
     </div>
 </body>
