@@ -32,67 +32,139 @@ body {
     grid-gap: 10px; /* Espacio entre columnas */
 }
 
-.column {
-    padding: 20px;
-}
-
 .card {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
     overflow: hidden;
-    width: 700px;
-    height: 500px;
-    border: 5px solid var(--blue-bayoux-800);
-}
-
-h2{
-    margin-top: 20px;
-    margin-left: 30px;
-    font-family: 'Protest Strike', sans-serif;
+    width: 600px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .card-info {
-    margin-left: 20px;
+    margin-top: 20px;
     font-size: 18px;
-    align-self: self-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.card-info .custom-input{
-    width: 40%; /* Establece el ancho de los inputs al 100% */
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.custom-input{
-    height: 30px;    
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 300px;
-}
-
-.card-info .custom-select{
-    width: 40%; /* Establece el ancho de los inputs al 100% */
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.custom-select{
-    align-items: end;
-    height: 30PX;
-    margin-top: 20px;
-    width: 500px;
-}
-
 
 .card-info form {
     display: flex;
     flex-direction: column;
 }
-  
+
+form{
+    margin-top: 20px;
+    width: 60%;
+    flex: content;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+h1{
+    color: black;
+    font-size: 24px;
+    font-family: 'Protest Strike', sans-serif;
+    text-align: center;
+}
+
 .card-info label {
     text-align: left;
     margin-bottom: 5px;
 }
+
+.card-info .custom-input{
+    width: 100%; /* Establece el ancho de los inputs al 100% */
+    margin-bottom: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px #ddd;
+}
+
+.custom-input{
+    height: 40px;    
+    width: 300px;
+}
+
+.card-info .custom-select{
+    width: 100%; /* Establece el ancho de los inputs al 100% */
+    margin-bottom: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px #ddd;
+}
+
+.custom-select{
+    height: 40PX;
+    width: 500px;
+}
+
+.botoncalcular{
+    color: white;
+    background-color: var(--blue-bayoux-700);
+    align-items: end;
+    height: 40PX;
+    width: 500px;
+    border-radius: 6px;
+    outline: none;
+    border: solid 1px var(--blue-bayoux-700);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.botoncalcular:hover{
+    color: var(--blue-bayoux-700);
+    background:var(--blue-bayoux-50);
+    border: solid 2px var(--blue-bayoux-700);
+}
+
+.card-info .botoncalcular{
+    margin-top: 20px;
+    width: 100%; /* Establece el ancho de los inputs al 100% */
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .card {
+        background-color: #fff;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 600px;
+        height: 550px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    
+    .card-info {
+        margin-top: 10px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .card-info form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form{
+        margin-top: 20px;
+        width: 80%;
+        flex: content;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+    
+    h1{
+        color: black;
+        font-size: 24px;
+        font-family: 'Protest Strike', sans-serif;
+        text-align: center;
+    }
+
+}
+
 
   
