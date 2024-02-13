@@ -57,7 +57,8 @@ h1 {
 }
 
 .buscador-btn:hover {
-    background-color: #b30000;
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
 }
 
 /* Estilos para la lista de usuarios */
@@ -114,13 +115,16 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0 5px; 
+    transition: all 0.2s;
 }
 
 .prev-btn:hover,
 .next-btn:hover,
 .anterior:hover,
 .siguiente:hover {
-    background-color: #b30000;
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
+    transform: scale(1.04);
 }
 
 /* Estilos para el botón de añadir usuario */
@@ -180,11 +184,13 @@ h1 {
 
 .tabla td .eliminar {
     background-color: #ff4d4d; 
+    border: solid 1px #ff4d4d;
     color: #fff;
 }
 
 .tabla td .eliminar:hover {
-    background-color: #c9bebe; 
+    background-color: var(--blue-bayoux-300);
+    color:#ff4d4d; 
 }
 
 .tabla td .modificar {
@@ -193,7 +199,8 @@ h1 {
 }
 
 .tabla td .modificar:hover {
-    background-color: #b30000; 
+    background-color: var(--blue-bayoux-200); 
+    color: var(--blue-bayoux-900);
 }
 /* Estilos para la separacion iconos libreria */
 /* Estilos para los iconos dentro de los botones */
