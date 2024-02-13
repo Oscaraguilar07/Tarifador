@@ -1,3 +1,4 @@
+/* Variables CSS */
 :root {
     --blue-bayoux-50: #f5f8fa;
     --blue-bayoux-100: #e9eff5;
@@ -9,6 +10,7 @@
     --blue-bayoux-950: #080d28;
 }
 
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,6 +32,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Estilos para el buscador */
 .buscador {
     display: flex;
     align-items: center;
@@ -57,6 +60,7 @@ h1 {
     background-color: #b30000;
 }
 
+/* Estilos para la lista de usuarios */
 .user-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -78,6 +82,7 @@ h1 {
     margin: 5px 0;
 }
 
+/* Estilos para las acciones de usuario */
 .user-actions {
     margin-top: 10px;
 }
@@ -91,32 +96,34 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
+/* Estilos para la paginación */
 .pagination {
     margin-top: 20px;
     text-align: center;
 }
 
 .prev-btn,
-.next-btn {
+.next-btn,
+.anterior,
+.siguiente {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: var(--blue-bayoux-700);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 0 5px; 
 }
 
 .prev-btn:hover,
-.next-btn:hover {
-    background-color: #0056b3;
+.next-btn:hover,
+.anterior:hover,
+.siguiente:hover {
+    background-color: #b30000;
 }
 
-.page-info {
-    margin: 0 10px;
-    font-size: 16px;
-}
-
+/* Estilos para el botón de añadir usuario */
 .add-user {
     text-align: center;
     margin-top: 20px;
@@ -144,6 +151,7 @@ h1 {
     background-color: #218838;
 }
 
+/* Estilos para la tabla de usuarios */
 .tabla {
     width: 100%;
     border-collapse: collapse;
@@ -176,36 +184,28 @@ h1 {
 }
 
 .tabla td .eliminar:hover {
-    background-color: #cc0000; 
+    background-color: #c9bebe; 
 }
 
 .tabla td .modificar {
-    background-color: #007bff; 
+    background-color: var(--blue-bayoux-700); 
     color: #fff;
 }
 
 .tabla td .modificar:hover {
-    background-color: #0056b3; 
+    background-color: #b30000; 
+}
+/* Estilos para la separacion iconos libreria */
+/* Estilos para los iconos dentro de los botones */
+.add-user-btn i,
+.eliminar i,
+.modificar i,
+.anterior i,
+.siguiente i {
+    margin-right: 5px; 
 }
 
-.pagination {
-    margin-top: 20px;
-    text-align: center;
+.siguiente i {
+    margin-left: 5px;
 }
 
-.anterior,
-.siguiente {
-    padding: 10px 20px;
-    background-color: var(--blue-bayoux-700);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 5px; 
-}
-
-.anterior:hover,
-.siguiente:hover {
-    background-color: #0056b3;
-}
