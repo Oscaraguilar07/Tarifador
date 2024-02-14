@@ -32,6 +32,13 @@ h1{
     font-style: normal;
 }
 
+h2{
+    color: black;
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+    font-style: normal;
+}
+
 label{
     margin-left: 9px;
 }
