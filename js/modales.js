@@ -57,4 +57,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // También puedes agregar aquí otras funciones y eventos según sea necesario
 });
+// JavaScript para cambiar entre contraseña y texto al hacer clic en el icono de ojo
+const passwordField = document.getElementById('contraseña');
+const eyeIcon = document.querySelector('.input-container i');
+
+eyeIcon.addEventListener('click', togglePasswordField);
+
+function togglePasswordField() {
+    const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordField.setAttribute('type', type);
+}
 
