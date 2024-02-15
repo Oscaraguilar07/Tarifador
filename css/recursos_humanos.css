@@ -10,33 +10,33 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
     background-color: var(--blue-bayoux-100);
+    display: flex;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 h1{
     color: black;
-    text-align: center;
     font-family: "Protest Strike", sans-serif;
     font-style: normal;
+    text-align: center;
 }
 
 h2{
     color: black;
-    text-align: center;
     font-family: "Protest Strike", sans-serif;
     font-style: normal;
+    text-align: center;
 }
 
 label{
@@ -44,12 +44,12 @@ label{
 }
 
 .selectProceso {
-    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     padding: 8px;
     margin-top: 4PX;
     outline: none;
-    border: 1px solid #ddd;
-    border-radius: 6px;
+    width: 100%;
 }
 
 .selectCantidad {
@@ -58,21 +58,21 @@ label{
 
 
 .container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    position: relative;
-    max-width: 600px;
-    width: 100%;
     background: #fff;
-    padding: 25px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    position: relative;
+    padding: 25px;
+    width: 100%;
 }
 
 .container header {
-    font-size: 1.5rem;
     color: #333;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -80,7 +80,6 @@ label{
 .container .form {
     margin-top: 30px;
     width: 60%;
-
 }
 
 .form .input-box {
@@ -94,17 +93,17 @@ label{
 }
 
 .form :where(.input-box input, .select-box) {
-    position: relative;
-    height: 50px;
-    outline: none;
-    font-size: 1rem;
-    color: #707070;
-    margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    padding: 0 15px;
-    width: 100%;
+    color: #707070;
+    font-size: 1rem;
     font-size: 14px;
+    height: 50px;
+    margin-top: 8px;
+    outline: none;
+    position: relative;
+    padding: 0 15px;    
+    width: 100%;
 }
 
 .input-box input:focus {
@@ -112,8 +111,8 @@ label{
 }
 
 .form .column {
-    display: flex;
     column-gap: 15px;
+    display: flex;
 }
 
 .form .gender-box {
@@ -128,9 +127,9 @@ label{
 }
 
 .form :where(.gender-option, .gender) {
-    display: flex;
     align-items: center;
     column-gap: 50px;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -155,26 +154,26 @@ label{
 }
 
 .select-box select {
-    height: 100%;
-    width: 100%;
-    outline: none;
     border: none;
     color: #707070;
     font-size: 1rem;
+    height: 100%;
+    outline: none;
+    width: 100%;
 }
 
 .form button {
+    background: var(--blue-bayoux-700);
     border-radius: 6px;
+    border: none;
+    cursor: pointer;
     height: 55px;
-    width: 100%;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 30px;
-    border: none;
-    cursor: pointer;
     transition: all 0.2s ease;
-    background: var(--blue-bayoux-700);
+    width: 100%;
 }
 
 .form button:hover {
@@ -183,8 +182,8 @@ label{
 
 @media screen and (max-width: 768px) {
 .container .form  {
-    width: 80%;
     font-size: 10px;
+    width: 80%;
 }
 .form :where(.input-box input, .select-box){
     font-size: 10px;
@@ -196,9 +195,9 @@ h3{
 }
 
 @media screen and (max-width: 400px) {
-    .container .form  {
-        width: 70%;
-        font-size: 7px;
+.container .form  {
+    font-size: 7px;
+    width: 70%;
 }
 .form :where(.input-box input, .select-box){
     font-size: 7px;

@@ -12,8 +12,8 @@
 
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -29,10 +29,10 @@ body{
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border: 2px solid var(--blue-bayoux-700);
-    position: relative;
     max-width: 430px;
     margin: 0 20px;
     overflow: hidden;
+    position: relative;
     width: 100%;
 }
 
@@ -47,24 +47,24 @@ body{
 
 .container .form{
     background-color: #fff;
-    padding: 30px;
     transition: margin-left 0.18s ease;
+    padding: 30px;
     width: 50%;
 }
 
 .container.active .login{
-    transition: margin-left 0.18s ease, opacity 0.15s ease;
     margin-left: -50%;
     opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
 }
 
 .container .signup{
-    transition: opacity 0.09s ease;
     opacity: 0;
+    transition: opacity 0.09s ease;
 }
 .container.active .signup{
-    transition: opacity 0.2s ease;
     opacity: 1;
+    transition: opacity 0.2s ease;
 }
 
 .container.active .forms{
@@ -83,18 +83,18 @@ body{
     border-radius: 25px;
     bottom: 0;
     height: 3px;
-    position: absolute;
     left: 0;
+    position: absolute;
     width: 30px;
 }
 
 .form .input-field{
-    position: relative;
-    height: 50px;
-    margin-top: 30px;
-    width: 100%;
     border: 1px solid #ddd;
     border-radius: 6px;
+    height: 50px;
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
     width: 100%;
 }
 
@@ -102,11 +102,11 @@ body{
 .input-field input{
     border-bottom: 2px solid #ccc;
     border-top: 2px solid transparent;
-    height: 100%;
     border: none;
-    padding: 0 35px;
-    outline: none;
     font-size: 16px;
+    height: 100%;
+    outline: none;
+    padding: 0 35px;
     transition: all 0.2s ease;
     width: 100%;
 }
@@ -117,11 +117,11 @@ body{
 
 .input-field i{
     color: #999;
+    font-size: 23px;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.2s ease;
-    font-size: 23px;
-    position: absolute;
 }
 
 .input-field input:is(:focus, :valid) ~ i{
@@ -141,9 +141,9 @@ body{
 .form .checkbox-text{
     align-items: center;
     display: flex;
+    justify-content: space-between;
     margin-top: 15px;
     margin-top: 20px;
-    justify-content: space-between;
 }
 
 .checkbox-text .checkbox-content{
@@ -192,4 +192,3 @@ body{
     margin-top: 30px;
     text-align: center;
 }
-
