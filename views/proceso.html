@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Usuarios</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/gestion_user.css">
+    <link rel="stylesheet" href="/css/proceso.css">
     <!-- libreria de google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +21,19 @@
         <table class="tabla">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Contraseña</th>
-                    <th>Estado</th>
-                    <th>opciones</th>
+                    <th>id</th>
+                    <th>proceso</th>
+                    <th>unidad de medida</th>
+                    <th>Prod_x_dia_x_rrhh </th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Nombre del Usuario</td>
-                    <td>Contraseña</td>
-                    <td>Activo</td>
+                    <td>21</td>
+                    <td>ORGANIZACIÓN TECNICA SIN HOJA DE CONTROL</td>
+                    <td>METRO LINEAL</td>
+                    <td>0</td>
                     <td>
                         <button class="eliminar"><i class='bx bx-trash'></i>Eliminar</button>
                         <button class="modificar"><i class='bx bx-edit'></i>Modificar</button>
@@ -75,10 +77,9 @@
                 <div class="modal-botones">
                     <button class="cancelar_md">Cancelar</button>
                     <button class="guardar-modificacion">Guardar</button>
-
                 </div>
-                <div class="modal-botones">
-                    <a href="/views/cambio_admin.html" class="cambio_contraseña">Reseteo de Contraseña</a>
+            </form>
+            
                 </div>
             </form>
         </div>

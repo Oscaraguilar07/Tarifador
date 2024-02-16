@@ -1,0 +1,170 @@
+/* Variables CSS */
+:root {
+    --blue-bayoux-50: #f5f8fa;
+    --blue-bayoux-100: #e9eff5;
+    --blue-bayoux-200: #cfdde8;
+    --blue-bayoux-600: #3b6381;
+    --blue-bayoux-700: #345670;
+    --blue-bayoux-800: #0b3d93;
+    --blue-bayoux-900: #122754;
+    --blue-bayoux-950: #080d28;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Protest Strike', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blue-bayoux-200);
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+/* Estilos para el buscador */
+.buscador {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buscador input {
+    flex: 0 1 auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.buscador-btn {
+    padding: 10px 20px;
+    background-color: var(--blue-bayoux-700);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.buscador-btn:hover {
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
+}
+
+/* Estilos para la tabla de usuarios */
+.tabla td .eliminar,
+.tabla td .modificar {
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tabla td .eliminar {
+    background-color: var(--blue-bayoux-700);
+    color: #fff;
+    margin-right: 5px;
+}
+
+.tabla td .eliminar:hover {
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
+}
+
+.tabla td .modificar {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.tabla td .modificar:hover {
+    background-color: #e0a800;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.anterior:hover,
+.siguiente:hover {
+    background-color: var(--blue-bayoux-200);
+    color: var(--blue-bayoux-900);
+    transform: scale(1.04);
+}
+
+/* Estilos para el botón de añadir usuario */
+.add-user {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    margin-top: 20px;
+}
+
+.add-user-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.add-user-btn img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.add-user-btn:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el formulario */
+.form_content {
+    margin-top: 20px;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.form_content label {
+    margin-bottom: 5px;
+}
+
+.form_content input[type="email"],
+.form_content select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+.form_content input[type="email"]:focus,
+.form_content select:focus {
+    border-color: var(--blue-bayoux-700);
+}
+
+.form_content input[type="email"]::placeholder,
+.form_content select::placeholder {
+    color: #999;
+}
+
+.form_content input[type="email"]:focus::placeholder,
+.form_content select:focus::placeholder {
+    color: transparent;
+}
